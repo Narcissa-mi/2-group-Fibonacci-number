@@ -11,3 +11,16 @@ while n!=0:
     break
   print(x) 
   print(y) 
+
+def fib(n):
+  x = 0
+  y = 1
+  for i in range(int(n/2)):
+    x = x+y
+    y = x+y
+  if n%2 is 0:
+    return x
+  return y
+number = int(input("番号を入力してください:"))
+for i in range(number):
+  print(fib(i))
